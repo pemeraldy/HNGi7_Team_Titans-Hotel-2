@@ -1,0 +1,13 @@
+.form-control {
+        background: var(--dark-color);
+    }
+    input[type=text] {
+        border:none;
+        border-bottom:1px solid darkgrey ;
+    }
+    p a {
+        color:grey;
+    }
+    p.lead {
+     color:grey;   
+    }

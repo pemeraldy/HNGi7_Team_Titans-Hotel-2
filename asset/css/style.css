@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #514525;
+  /* --secondary-color: ;
+  --light-color: ; */
+  --dark-color: #151412;
+  --light-dark-color: #1E1E1C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+}
+
+/* Nav Section */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Utilities */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.dark-gray {
+  background: var(--dark-color);
+}
+
+.light-gray {
+  background: var(--light-dark-color);
+}
+
+/* Navigation bar*/
+.nav-item {
+  margin-right: 1.3rem;
+}
+
+
+/* Section - Hero */
+
+#hero {
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+#hero .overlay {
+  height: 100vh;
+}
+
+#hero .hero-content {
+  height: 90%;
+  width: 50%;
+  align-items: center;
+}
+
+
+/* Section - About Us */
+
+#about-us {
+  background: var(--dark-color);
+  padding: 3rem 2rem;
+}
+
+#about-us .about-container,
+#rooms-suites .rooms-container {
+  height: 100%;
+}
+
+#about-us .about-img {
+  height: 500px;
+  background: url('../img/olexandr-ignatov-w72a24brINI-unsplash.jpg') no-repeat center center/cover;
+}
+
+/* Section - Rooms and Suites */
+
+#rooms-suites {
+  background-color: var(--light-dark-color);
+  padding: 3rem 2rem;
+}
+
+#rooms-suites .rooms-img {
+  height: 500px;
+  background: url('../img/rooms-and-suites.jpg') no-repeat center center/cover;
+}
+
+/* Section - Our Facilities */
+
+#facilities {
+  padding-bottom: 3rem;
+}
+
+.facilities-card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.facilities-card .arrow-btn {
+  width: 40px;
+  height: 40px;
+  margin-top: .5rem;
+}
+
+#book-now {
+  width: 80%;
+}
+
+/* Section - Footer */
+
+footer nav {
+  border-bottom: 1px #eee solid;
+}
+
+footer nav.navbar {
+  padding: .5rem 0;
+}
+
+.social-media i {
+  padding-left: 1.5rem;
+  color: #fff;
+}
+
+/* Responsiveness */
+
+@media(max-width: 768px) {
+  #hero .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-img,
+  .rooms-img {
+    margin-top: 4rem;
+  }
+
+  .facility-wrap .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  #book-now {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer div div:last-child {
+    flex-direction: column;
+    text-align: center;
+  }
+}
